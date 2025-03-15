@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/metrics-mindscape/', // Set the base path to match your repository name
+  base: './', // Change to relative path for GitHub Pages
   server: {
     host: "::",
     port: 8080,
