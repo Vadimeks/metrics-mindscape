@@ -1,6 +1,6 @@
 
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -36,7 +36,7 @@ const NotFound = () => {
         <h1 className="text-4xl font-bold mb-4 text-gray-900">404</h1>
         <p className="text-xl text-gray-600 mb-8">The page you're looking for doesn't exist</p>
         <Button asChild className="px-8 py-6 bg-blue-600 hover:bg-blue-700 rounded-xl">
-          <a href="/">Return to Home</a>
+          <Link to="/">Return to Home</Link>
         </Button>
       </div>
     </div>

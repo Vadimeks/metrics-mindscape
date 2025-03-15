@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import DataEntry from '@/components/DataEntry';
@@ -48,9 +49,9 @@ const IndexContent: React.FC = () => {
               Track your personal metrics, analyze correlations, and gain actionable insights to improve your life.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-600 hover:text-gray-900">Privacy Policy</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">Terms of Service</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
+              <Link to="/" className="text-gray-600 hover:text-gray-900">Privacy Policy</Link>
+              <Link to="/" className="text-gray-600 hover:text-gray-900">Terms of Service</Link>
+              <Link to="/" className="text-gray-600 hover:text-gray-900">Contact</Link>
             </div>
             <p className="mt-8 text-gray-400 text-sm">© {new Date().getFullYear()} DataInsight. All rights reserved.</p>
           </div>
