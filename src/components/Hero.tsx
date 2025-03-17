@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-[-1] overflow-hidden">
         <div className="absolute inset-0 bg-gray-500/30 backdrop-blur-sm"></div>
         <img 
-          src="/lovable-uploads/health-tracking-bg.png" 
+          src="/lovable-uploads/bbca31c0-a9b3-411e-bc8a-e7fab3867e9f.png" 
           alt="Health tracking visualization" 
           className="w-full h-full object-cover"
         />
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           Discover the power of data-driven insights. Track your personal metrics, analyze correlations, and gain actionable knowledge to improve your life.
         </p>
         
-        {/* New Information Section */}
+        {/* Data Input Information */}
         <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl mb-10 max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-blue-700 mb-3">Data Input</h2>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">Track Your Metrics</h3>
