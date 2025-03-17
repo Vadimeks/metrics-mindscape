@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-[-1] overflow-hidden">
         <div className="absolute inset-0 bg-gray-500/30 backdrop-blur-sm"></div>
         <img 
-          src="./lovable-uploads/734e1e63-3348-4804-a1e6-6ed168844c18.png" 
+          src="/lovable-uploads/health-tracking-bg.png" 
           alt="Health tracking visualization" 
           className="w-full h-full object-cover"
         />
