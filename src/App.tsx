@@ -15,7 +15,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <HashRouter>
+      <HashRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Index />} />
