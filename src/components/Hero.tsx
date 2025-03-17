@@ -22,9 +22,19 @@ const Hero: React.FC = () => {
   return (
     <div 
       ref={containerRef}
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-20 opacity-0"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-20 opacity-0 relative"
     >
-      <div className="max-w-3xl mx-auto text-center">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-[-1] overflow-hidden">
+        <div className="absolute inset-0 bg-gray-500/30 backdrop-blur-sm"></div>
+        <img 
+          src="./lovable-uploads/734e1e63-3348-4804-a1e6-6ed168844c18.png" 
+          alt="Health tracking visualization" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="max-w-5xl mx-auto text-center z-10">
         <div className="inline-block mb-6">
           <div className="flex items-center justify-center px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">
             <span className="mr-1.5 flex h-2 w-2 relative">
@@ -39,9 +49,18 @@ const Hero: React.FC = () => {
           Understand Your Data.<br />Achieve Your Goals.
         </h1>
         
-        <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl text-gray-800 mb-10 max-w-2xl mx-auto">
           Discover the power of data-driven insights. Track your personal metrics, analyze correlations, and gain actionable knowledge to improve your life.
         </p>
+        
+        {/* New Information Section */}
+        <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl mb-10 max-w-2xl mx-auto">
+          <h2 className="text-2xl font-bold text-blue-700 mb-3">Data Input</h2>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">Track Your Metrics</h3>
+          <p className="text-gray-700">
+            Record your daily metrics to start building your personal dataset. The more data you provide, the more accurate your analysis will be.
+          </p>
+        </div>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button 
@@ -60,15 +79,9 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      {/* Abstract background elements */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full filter blur-3xl opacity-30 transform translate-x-1/3 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-50 rounded-full filter blur-3xl opacity-30 transform -translate-x-1/3 translate-y-1/2"></div>
-      </div>
-      
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-gray-500 mb-2">Scroll Down</span>
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-10">
+        <span className="text-sm text-gray-800 mb-2 font-medium">Scroll Down</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 17L12 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M7 12L12 17L17 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

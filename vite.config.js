@@ -16,4 +16,5 @@ export default defineConfig({
     assetsDir: 'assets',
     emptyOutDir: true,
   },
+  publicDir: 'public', // Ensure public directory is included in the build
 });
